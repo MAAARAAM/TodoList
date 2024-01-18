@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="form">
+        <h5 class="italic-small-text" >(Veuillez entrer Login 0000 et le mot de passe 0000 pour accéder à la todo list)</h5>
+        <form [formGroup]="authForm" (ngSubmit)="checkLogin()">
+            <label for="">Login</label>
+            <input type="text" formControlName="login" required/><br>
+            <!-- formcontrolname lie le champ dans html avec celui dans le fichier ts -->
+            <label for="">Password</label>
+            <input type="password" formControlName="password" /><br>
+            <div class="login">
+                <button class="btn btn-dark" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
